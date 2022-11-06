@@ -1,0 +1,25 @@
+<nav class="navbar fixed-top navbar-dark bg-info">
+    <a class = "navbar-brand" routerLink="/" ><strong>TC Full stack Shop App</strong> </a>
+    <div class="form-inline">
+        <button *ngIf="!router.url.includes('profile')" class="btn btn-dark mr-sm-2" routerLink="/login">
+            Login
+        </button>&nbsp;
+        <button *ngIf="!router.url.includes('profile')" class="btn btn-warning my-2 my-sm-0 " routerLink="/register">
+            SignUp
+        </button>
+    </div>
+    <div class="form-inline">
+        <!-- <div *ngIf = "isLogIn" class="mr-sm-2 text-white">
+            Hello Admin
+        </div> -->
+        <div *ngIf="router.url.includes('profile')">
+            Hello Ritul
+          </div>
+         <div *ngIf="!router.url.includes('profile')">
+            Hello Admin
+        </div> 
+        <button class="btn btn-warning my-2 my-sm-0 ">
+            Logout
+        </button>
+    </div>
+</nav>

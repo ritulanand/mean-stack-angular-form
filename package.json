@@ -1,0 +1,26 @@
+{
+  "name": "clientapp",
+  "version": "1.0.0",
+  "description": "This is MEAN Stack project using Angular 13 by Ritul",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mongodb",
+    "expressjs",
+    "Angular",
+    "and",
+    "Nodejs"
+  ],
+  "author": "Ritul",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.7"
+  }
+}
